@@ -1,0 +1,112 @@
+diff --git modules/freedom-openocd/Metadata.mk modules/freedom-openocd/Metadata.mk
+index ea97256..dc94e88 100644
+--- modules/freedom-openocd/Metadata.mk
++++ modules/freedom-openocd/Metadata.mk
+@@ -1,5 +1,5 @@
+ # Git repos, branches, commits and folders to get source code for the tool we are building
+-RISCV_OPENOCD_GITURL := git@github.com:riscv/riscv-openocd.git
++RISCV_OPENOCD_GITURL := https://github.com/riscv/riscv-openocd.git
+ RISCV_OPENOCD_BRANCH := riscv
+ RISCV_OPENOCD_COMMIT := a83ac8102208fe43029e31a20ea00eb5f242f5e3
+ RISCV_OPENOCD_FOLDER := riscv-openocd
+diff --git modules/freedom-qemu/Metadata.mk modules/freedom-qemu/Metadata.mk
+index 7d39f09..76f441a 100644
+--- modules/freedom-qemu/Metadata.mk
++++ modules/freedom-qemu/Metadata.mk
+@@ -1,5 +1,5 @@
+ # Git repos, branches, commits and folders to get source code for the tool we are building
+-RISCV_QEMU_GITURL := git@github.com:sifive/qemu.git
++RISCV_QEMU_GITURL := https://github.com/sifive/qemu.git
+ RISCV_QEMU_BRANCH := v5.2.0-rvv-rvb-zfh
+ RISCV_QEMU_COMMIT := 3870dd3ef58a5c74673388785ad3bfa655af23a4
+ RISCV_QEMU_FOLDER := riscv-qemu
+diff --git modules/freedom-sdk-utilities/Metadata.mk modules/freedom-sdk-utilities/Metadata.mk
+index 4542011..86c396c 100644
+--- modules/freedom-sdk-utilities/Metadata.mk
++++ modules/freedom-sdk-utilities/Metadata.mk
+@@ -1,9 +1,9 @@
+ # Git repos, branches, commits and folders to get source code for the tool we are building
+-RISCV_ISA_SIM_GITURL := git@github.com:riscv/riscv-isa-sim.git
++RISCV_ISA_SIM_GITURL := https://github.com/riscv/riscv-isa-sim.git
+ RISCV_ISA_SIM_BRANCH := master
+ RISCV_ISA_SIM_COMMIT := f1bcfac7ebe334ebdef39a5d59e18e37eef813a5
+ RISCV_ISA_SIM_FOLDER := riscv-isa-sim
+-FREEDOM_ELF2HEX_GITURL := git@github.com:sifive/freedom-elf2hex.git
++FREEDOM_ELF2HEX_GITURL := https://github.com/sifive/freedom-elf2hex.git
+ FREEDOM_ELF2HEX_BRANCH := master
+ FREEDOM_ELF2HEX_COMMIT := 7bcc57b85fdb7002dffb6e7515d8b8ecac32cfcd
+ FREEDOM_ELF2HEX_FOLDER := freedom-elf2hex
+diff --git modules/freedom-trace-decoder/Metadata.mk modules/freedom-trace-decoder/Metadata.mk
+index 17dc3fa..fabd89c 100644
+--- modules/freedom-trace-decoder/Metadata.mk
++++ modules/freedom-trace-decoder/Metadata.mk
+@@ -1,7 +1,7 @@
+ include ../freedom-binutils-metal/Metadata.mk
+ 
+ # Git repos, branches, commits and folders to get source code for the tool we are building
+-TRACE_DECODER_GITURL := git@github.com:sifive/trace-decoder.git
++TRACE_DECODER_GITURL := https://github.com/sifive/trace-decoder.git
+ TRACE_DECODER_BRANCH := master
+ TRACE_DECODER_COMMIT := 7f39506b39e49320b6dd51a53abc08aedabfaf8b
+ TRACE_DECODER_FOLDER := trace-decoder
+diff --git modules/freedom-xc3sprog/Metadata.mk modules/freedom-xc3sprog/Metadata.mk
+index b7b552b..09bcb1e 100644
+--- modules/freedom-xc3sprog/Metadata.mk
++++ modules/freedom-xc3sprog/Metadata.mk
+@@ -1,5 +1,5 @@
+ # Git repos, branches, commits and folders to get source code for the tool we are building
+-XC3SPROG_GITURL := git@github.com:sifive/xc3sprog.git
++XC3SPROG_GITURL := https://github.com/sifive/xc3sprog.git
+ XC3SPROG_BRANCH := master
+ XC3SPROG_COMMIT := 893bd2463fecb5953f2603c8800ffd823861ce37
+ XC3SPROG_FOLDER := xc3sprog
+diff --git scripts/base_binutils_metadata.mk scripts/base_binutils_metadata.mk
+index 62869d6..aac35f7 100644
+--- scripts/base_binutils_metadata.mk
++++ scripts/base_binutils_metadata.mk
+@@ -1,7 +1,7 @@
+ include ../../scripts/base_toolchain_metadata.mk
+ 
+ # Git repos, branches, commits and folders to get source code for the tool we are building
+-RISCV_BINUTILS_GITURL := git@github.com:sifive/riscv-binutils-gdb.git
++RISCV_BINUTILS_GITURL := https://github.com/sifive/riscv-binutils-gdb.git
+ RISCV_BINUTILS_BRANCH := sifive-rvv-1.0.x-zfh-rvb
+ RISCV_BINUTILS_COMMIT := 75d2236ce26a3048f52bbd5186602e27bd635e2b
+ RISCV_BINUTILS_FOLDER := riscv-binutils
+diff --git scripts/base_gcc_metadata.mk scripts/base_gcc_metadata.mk
+index 165c391..3a484ed 100644
+--- scripts/base_gcc_metadata.mk
++++ scripts/base_gcc_metadata.mk
+@@ -1,7 +1,7 @@
+ include ../../scripts/base_toolchain_metadata.mk
+ 
+ # Git repos, branches, commits and folders to get source code for the tool we are building
+-RISCV_GCC_GITURL := git@github.com:sifive/riscv-gcc.git
++RISCV_GCC_GITURL := https://github.com/sifive/riscv-gcc.git
+ RISCV_GCC_BRANCH := sifive-gcc-10.2.0
+ RISCV_GCC_COMMIT := 37e9e5efeda593e0ff594105c83da67d2d2832e5
+ RISCV_GCC_FOLDER := riscv-gcc
+diff --git scripts/base_gdb_metadata.mk scripts/base_gdb_metadata.mk
+index e0bab5a..8e0f113 100644
+--- scripts/base_gdb_metadata.mk
++++ scripts/base_gdb_metadata.mk
+@@ -1,7 +1,7 @@
+ include ../../scripts/base_toolchain_metadata.mk
+ 
+ # Git repos, branches, commits and folders to get source code for the tool we are building
+-RISCV_GDB_GITURL := git@github.com:sifive/riscv-binutils-gdb.git
++RISCV_GDB_GITURL := https://github.com/sifive/riscv-binutils-gdb.git
+ RISCV_GDB_BRANCH := sifive-gdb-rvv-1.0.x-zfh-rvb-with-sim
+ RISCV_GDB_COMMIT := 1ac8c2ffcb4a0a98d0597e71f9313352bda11ee3
+ RISCV_GDB_FOLDER := riscv-gdb
+diff --git scripts/base_newlib_metadata.mk scripts/base_newlib_metadata.mk
+index 07e8936..0dd13a3 100644
+--- scripts/base_newlib_metadata.mk
++++ scripts/base_newlib_metadata.mk
+@@ -1,5 +1,5 @@
+ # Git repos, branches, commits and folders to get source code for the tool we are building
+-RISCV_NEWLIB_GITURL := git@github.com:sifive/riscv-newlib.git
++RISCV_NEWLIB_GITURL := https://github.com/sifive/riscv-newlib.git
+ RISCV_NEWLIB_BRANCH := sifive-newlib-4.1.0-rvv
+ RISCV_NEWLIB_COMMIT := aa755e658de9fc74678bd63a6ae556e66f636c6c
+ RISCV_NEWLIB_FOLDER := riscv-newlib
